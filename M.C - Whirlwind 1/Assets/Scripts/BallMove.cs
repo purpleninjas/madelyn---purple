@@ -7,9 +7,9 @@ public class BallMove : MonoBehaviour
     private Rigidbody2D rb;
     private CircleCollider2D circleCollider;
 
-    [Range(0f, 10f)]
+    [Range(3f, 100f)]
     public float speed;
-    [Range(0f, 1f)]
+    [Range(0f, 10f)]
     public float bounciness;
     // Start is called before the first frame update
     void Start()
