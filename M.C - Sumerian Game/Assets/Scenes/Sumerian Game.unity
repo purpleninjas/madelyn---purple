@@ -190,6 +190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363787b9a63849549bc20297f3a03fef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: Madelyn
+  nameText: {fileID: 1271728824}
+  yearText: {fileID: 2068298320}
+  highestPopText: {fileID: 416273348}
 --- !u!1 &195998096
 GameObject:
   m_ObjectHideFlags: 0
