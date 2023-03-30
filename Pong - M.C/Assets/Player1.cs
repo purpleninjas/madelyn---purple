@@ -14,6 +14,7 @@ public class Player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {  
+        
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transform.Translate(Vector2.up * Time.deltaTime * speed);
@@ -25,3 +26,17 @@ public class Player1 : MonoBehaviour
         }
     }
 }
+
+
+/*
+public class  computer
+{
+    public Color frontcolor;
+    public Color backcolor;
+
+    int adding(int a, int m)
+    {
+        return a + m;
+    }
+}
+*/
