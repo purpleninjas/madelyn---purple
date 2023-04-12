@@ -15,14 +15,7 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(Vector2.left * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(Vector2.right * Time.deltaTime * speed);
-        }
+
         if (transform.position.y < player.transform.position.y)
         {
             Time.timeScale = 0;

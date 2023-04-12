@@ -9,14 +9,9 @@ public class Score : MonoBehaviour
     private int score;
 
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
-    
             score = 0;
-            Destroy(collision.gameObject);
-            score++;
-            scoreText.text = score.ToString();
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,6 +19,8 @@ public class Score : MonoBehaviour
         if (collision.gameObject.CompareTag("Brick"))
         {
             Destroy(collision.gameObject);
+            score++;
+            scoreText.text = score.ToString();
         }
     }
 }
