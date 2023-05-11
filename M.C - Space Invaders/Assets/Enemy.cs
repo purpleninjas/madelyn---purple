@@ -17,34 +17,27 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-/*        transform.Translate(direction * Time.deltaTime * speed);
-        if (transform.position.x > 8f)
+        transform.Translate(direction * Time.deltaTime * speed);
+
+        if (transform.position.x > 12f)
         {
             direction = Vector2.left;
             MoveDown();
         }
-        if (transform.position.x < -8f)
+        if (transform.position.x < -12f)
         {
             direction = Vector2.right;
             MoveDown();
-        }*/
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         animator.SetTrigger("death");
-        Debug.Log("hit");
         Destroy(gameObject, 1f);
         Destroy(collision.gameObject);
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        
-    }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        
-    }
+  
     private void MoveDown()
     {
         foreach (Enemy enemy in FindObjectsOfType(typeof(Enemy)))
