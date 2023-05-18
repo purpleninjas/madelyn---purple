@@ -354,7 +354,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f060fd77051f747bb762fd76e39210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  lookSpeed: 200
+  moveSpeed: 1
+  maxSpeed: 5
+  bulletPrefab: {fileID: 8291696911345497110, guid: 5725ea1bf75720f4bbfd3366f85afe1d, type: 3}
 --- !u!114 &1482916416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7e9fbd496dd4fc46a1177a2448f8f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rockPrefab: {fileID: 9172561874964603836, guid: ab261ebf3e1384e4eadac2407658501c, type: 3}
 --- !u!4 &1886818203
 Transform:
   m_ObjectHideFlags: 0

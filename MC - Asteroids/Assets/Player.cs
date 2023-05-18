@@ -20,12 +20,26 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(Vector3.forward);
+            transform.Rotate(Vector3.forward * Time.deltaTime * lookSpeed);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector3.back);
+            transform.Rotate(Vector3.back * Time.deltaTime * lookSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            Vector3 velocity = rb.velocity;
+            velocity = velocity + transform.right * Time.deltaTime * moveSpeed;
+            Vector3.ClampMagnitude(velocity, maxSpeed);
+            rb.velocity = velocity;
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Instantiate(bulletPrefab, transform.position, transform.rotation);
         }
     }
 }
+
