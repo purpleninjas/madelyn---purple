@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Movement : MonoBehaviour
+public abstract class Movement: MonoBehaviour
 {
     public float speed;
     public Vector2 initialDirection;
@@ -30,7 +30,7 @@ public abstract class Movement : MonoBehaviour
         ChildUpdate();
 
     }
-    abstract protected void ChildUpdate();
+    
     private void FixedUpdate()
     {
         Vector2 position = rb.position;
@@ -57,4 +57,5 @@ public abstract class Movement : MonoBehaviour
             nextDirection = newDirection;
         }
     }
+    abstract protected void ChildUpdate();
 }
