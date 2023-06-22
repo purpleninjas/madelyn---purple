@@ -26,9 +26,7 @@ public abstract class Movement: MonoBehaviour
         {
             SetDirection(nextDirection);
         }
-
         ChildUpdate();
-
     }
     
     private void FixedUpdate()
