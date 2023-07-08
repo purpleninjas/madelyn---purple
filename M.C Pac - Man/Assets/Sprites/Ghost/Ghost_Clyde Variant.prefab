@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2972106722875302626, guid: 6e861fc266797ba409d6b2a49ccdc837, type: 3}
       propertyPath: m_Name
-      value: Ghost_Clyde
+      value: Ghost_Clyde Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2972106722875302627, guid: 6e861fc266797ba409d6b2a49ccdc837, type: 3}
       propertyPath: m_RootOrder
@@ -55,5 +55,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9064292168371651847, guid: 6e861fc266797ba409d6b2a49ccdc837, type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064292168371651847, guid: 6e861fc266797ba409d6b2a49ccdc837, type: 3}
+      propertyPath: homeDuration
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e861fc266797ba409d6b2a49ccdc837, type: 3}
+--- !u!1 &6274572248791298478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2972106722875302626, guid: 6e861fc266797ba409d6b2a49ccdc837, type: 3}
+  m_PrefabInstance: {fileID: 9091863188167906124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &-3280071820118168954
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274572248791298478}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &-8083536832338805877
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274572248791298478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
